@@ -1,0 +1,88 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+section {
+    margin-top: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Style your header and logo */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the hamburger menu button */
+.hamburger-menu-btn {
+  display: none; /* Hide on large screens */
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger-menu-btn .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+/* Style the navigation links */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Display links horizontally on large screens */
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Responsive Styles - Show hamburger menu on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;  /* Hide links on small screens */
+  }
+
+  .hamburger-menu-btn {
+    display: block;  /* Show hamburger menu on small screens */
+  }
+}
+
